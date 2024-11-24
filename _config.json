@@ -1,0 +1,20 @@
+{
+"title": "JSON Config Demo",
+  "description": "A demo of rendering YAML data with Jekyll",
+  "baseurl": "",
+  "url": "",
+  "markdown": "kramdown",
+  "plugins_dir": "_plugins",
+  "collections": {
+    "products": {
+      "output": true,
+      "permalink": "/products/:path/"
+    }
+  },
+  "safe": false,
+  "exclude": [
+    "Gemfile",
+    "Gemfile.lock",
+    "README.md"
+  ]
+}
