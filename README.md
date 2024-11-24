@@ -1,6 +1,6 @@
 # yaml_demo2
 
-Note: Here we are adding to render data from both data.yaml : data.json & _config.json : _config.yaml. As of now both files is there in _data & _config folder but As json files placed first in the folder so it will be rendered first.
+Note: Here we are adding to render data from both data.yaml : data.json & _config.json : _config.yaml. As of now both files is there in _data & _config folder but As json files placed first in the folder so it will be rendered first.  This _plugings folder also added while makeing _congfig.yaml to _config.json because .json natively not supported by jekyll so we haved added plugin in _plugins.
 
 Let me explain how the layout system works:
 
