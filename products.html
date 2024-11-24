@@ -1,0 +1,59 @@
+---
+layout: default
+title: Our Products
+---
+
+<h1>{{ page.title }}</h1>
+
+<div class="products-nav">
+    <style>
+        .products-nav {
+            margin: 2em 0;
+        }
+        .product-category {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .product-category:hover {
+            transform: translateX(10px);
+            background: #e9ecef;
+        }
+        .product-category a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            display: block;
+        }
+        .product-count {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+    </style>
+
+    <div class="product-category">
+<a href="/products/laptops">Laptops</a>
+        <div class="product-count">
+            {{ site.data.data.products.laptops | size }} models available
+        </div>
+    </div>
+
+    <div class="product-category">
+        <a href="/products/smartphones">Smartphones</a>
+        <div class="product-count">
+            {{ site.data.data.products.smartphones | size }} models available
+        </div>
+    </div>
+
+    <div class="product-category">
+        <a href="/products/accessories">Accessories</a>
+        <div class="product-count">
+            {{ site.data.data.products.accessories | size }} items available
+        </div>
+    </div>
+</div>
+
+<p>Browse our complete collection of products above. Each category showcases detailed information about our available items, including specifications, features, and pricing.</p>

@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<h1>{{ site.title }}</h1>
+<nav style="margin-bottom: 2em; padding: 1em; background: #9bc60e; border-radius: 4px;">
+<a href="/products" style="text-decoration: none; color: #333; font-weight: bold;">View Our Products</a>
+</nav>
+
+<h2>Our Team</h2>
+{% for member in site.data.data.team %} 
+<div class="team-member">
+    <h3>{{ member.name }}</h3>
+    <p><strong>Position:</strong> {{ member.position }}</p>
+    
+    <div class="skills">
+        <strong>Skills:</strong>
+        <div class="skills-list">
+            {% for skill in member.skills %}
+            <span class="skill-tag">{{ skill }}</span>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="projects">
+        <strong>Projects:</strong>
+        <ul>
+            {% for project in member.projects %}
+            <li>{{ project.name }} - <em>{{ project.status }}</em></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endfor %}
+
+<div class="company-info">
+    <h2>About {{ site.data.data.company.name }}</h2>
+    <p><strong>Founded:</strong> {{ site.data.data.company.founded }}</p>
+    <p><strong>Location:</strong> {{ site.data.data.company.location }}</p>
+    
+    <h3>Our Services</h3>
+    <ul>
+        {% for service in site.data.data.company.services %}
+        <li>{{ service }}</li>
+        {% endfor %}
+    </ul>
+    <strong>Countries where our services Accessible</strong>
+    <p><strong>Asian Country: </strong>{{ site.data.data.countries.country1 }}</p> 
+    <p><strong>Westren Country: </strong>{{ site.data.data.countries.country2 }}</p> 
+    <p><strong>MiddleEast Country: </strong>{{ site.data.data.countries.country3 }}</p> 
+    <p><strong>Asian Country2: </strong>{{ site.data.data.countries.country4 }}</p> 
+
+</div>

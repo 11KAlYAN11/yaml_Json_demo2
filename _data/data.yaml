@@ -1,0 +1,68 @@
+# Sample team data
+team:
+  - name: John Doe
+    position: Software Engineer
+    skills:
+      - Python
+      - JavaScript
+      - Ruby
+    projects:
+      - name: Project Alpha
+        status: Completed
+      - name: Project Beta
+        status: In Progress
+        
+# Company information
+company:
+  name: Tech Solutions Inc
+  founded: 2020
+  location: San Francisco, CA
+  services:
+    - Web Development
+    - Mobile Apps
+    - UI/UX Design
+    - Cloud Solutions
+
+# Products data for markdown files
+products:
+  laptops:
+    - name: ProBook X1
+      price: 999.99
+      specs:
+        cpu: "Intel i7"
+        ram: "16GB"
+        storage: "512GB SSD"
+    - name: UltraLight Y2
+      price: 799.99
+      specs:
+        cpu: "AMD Ryzen 5"
+        ram: "8GB"
+        storage: "256GB SSD"
+
+  smartphones:
+    - name: TechPhone Pro
+      price: 699.99
+      features:
+        - "5G Capable"
+        - "6.7 inch OLED"
+        - "Triple Camera"
+    - name: TechPhone Lite
+      price: 399.99
+      features:
+        - "4G LTE"
+        - "6.1 inch LCD"
+        - "Dual Camera"
+
+  accessories:
+    - name: Wireless Earbuds
+      price: 129.99
+      colors:
+        - Black
+        - White
+        - Blue
+    - name: Smart Watch
+      price: 199.99
+      features:
+        - "Heart Rate Monitor"
+        - "GPS"
+        - "Water Resistant"
