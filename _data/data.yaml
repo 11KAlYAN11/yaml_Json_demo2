@@ -1,6 +1,6 @@
 # Sample team data
 team:
-  - name: John Doe
+  - name: John Doe From data.Yaml
     position: Software Engineer
     skills:
       - Python
